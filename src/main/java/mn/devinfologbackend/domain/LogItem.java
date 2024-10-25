@@ -16,8 +16,8 @@ import java.util.Date;
 public class LogItem extends EntityBase {
     private String description;
     @ManyToOne(optional = false)
-    @JoinColumn(name = "author_id", nullable = false)
-    private User author;
+    @JoinColumn(name = "appuser_id", nullable = false)
+    private AppUser author;
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationTimestamp;
