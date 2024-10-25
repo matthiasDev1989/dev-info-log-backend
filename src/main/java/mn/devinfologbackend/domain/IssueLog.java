@@ -3,6 +3,8 @@ package mn.devinfologbackend.domain;
 import jakarta.persistence.Entity;
 import lombok.*;
 
+import java.util.Set;
+
 @Getter
 @Setter
 @ToString
@@ -10,5 +12,6 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 public class IssueLog extends LogItem {
-    private String solutionApproach;
+    private Set<String> stepsToReproduce;
+    private String resolutionDetails;
 }

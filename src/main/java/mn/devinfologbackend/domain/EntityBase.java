@@ -10,12 +10,6 @@ import lombok.ToString;
 
 import java.util.UUID;
 
-/**
- * Simple JavaBean domain object with an id property. Used as a base class for objects needing this property.
- *
- * @author Matthias Niemann
- */
-
 @Getter
 @Setter
 @ToString
