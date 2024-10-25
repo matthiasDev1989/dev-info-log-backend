@@ -13,13 +13,14 @@ import java.util.Date;
 @ToString
 @MappedSuperclass
 public class LogItem extends EntityBase {
-    String description;
+    private String description;
     @ManyToOne(optional = false)
     @JoinColumn(name = "author_id", nullable = false)
-    User author;
+    private User author;
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    Date creationTimestamp;
-    boolean isPublicAvailable;
-    boolean isModifiable;
+    private Date creationTimestamp;
+    private boolean isPublicAvailable;
+    private boolean isModifiable;
+    private Tag tag;
 }
